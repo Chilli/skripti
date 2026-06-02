@@ -3,53 +3,121 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Bokklokka er en enkel hobbyapp for å holde orden på lesetid for barn.">
-    <title>Bokklokka</title>
+    <meta name="description" content="Skripti er et enkelt dashboard for publiserte apper, prosjekter og nettsider.">
+    <title>Skripti</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <main class="shell">
+    <div class="backdrop" aria-hidden="true"></div>
+    <main class="page">
+      <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Skripti startside">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="assets/skripti-logo.svg" alt="">
+          </span>
+          <span class="brand-text">
+            <span class="eyebrow">Skripti</span>
+            <strong>Dashboard</strong>
+          </span>
+        </a>
+
+        <nav class="nav" aria-label="Hovednavigasjon">
+          <a href="index.html" aria-current="page">Hjem</a>
+          <a href="bokklokka.html">Bokklokka</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Personvern</a>
+        </nav>
+      </header>
+
       <section class="hero card">
-        <div class="brand">
-          <div class="mark" aria-hidden="true">
-            <img src="assets/lion-clock-logo.svg" alt="" />
-          </div>
-          <div>
-            <p class="eyebrow">Skripti</p>
-            <h1>Bokklokka</h1>
+        <div class="hero-copy">
+          <p class="eyebrow">Skripti.no</p>
+          <h1>Et enkelt dashboard for apper, prosjekter og ting som er på vei ut i verden.</h1>
+          <p class="lead">
+            Dette er forsiden for mine publiserte apper og nettsider. Her samler jeg produkter, lenker og status på det som faktisk er live.
+          </p>
+
+          <div class="actions">
+            <a class="button primary" href="bokklokka.html">Åpne Bokklokka</a>
+            <a class="button" href="support.html">Kontakt og support</a>
           </div>
         </div>
 
-        <p class="lead">
-          En enkel og uoffisiell hobbyapp for å holde orden på lesetid for barn.
-        </p>
-
-        <div class="actions">
-          <a class="button primary" href="support.html">Support</a>
-          <a class="button" href="privacy.html">Personvern</a>
-        </div>
+        <aside class="hero-panel">
+          <div class="metric">
+            <span class="metric-label">Publiserte apper</span>
+            <strong>1</strong>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Offentlige sider</span>
+            <strong>3</strong>
+          </div>
+          <div class="metric">
+            <span class="metric-label">Kontakt</span>
+            <strong>jm@skripti.no</strong>
+          </div>
+        </aside>
       </section>
 
-      <section class="card grid">
-        <article>
-          <h2>Hva appen gjør</h2>
-          <ul>
-            <li>Registrerer flere barn</li>
-            <li>Legger inn bøker manuelt eller via ISBN-skanning</li>
-            <li>Lar deg starte og stoppe flere timere samtidig</li>
-            <li>Holder oversikt over ferdig leste bøker</li>
-          </ul>
+      <section class="section-head">
+        <div>
+          <p class="eyebrow">Innhold</p>
+          <h2>Hva som ligger på siden</h2>
+        </div>
+        <p class="section-note">Naviger fritt mellom dashboard, appside, support og personvern.</p>
+      </section>
+
+      <section class="grid cards">
+        <article class="tile featured">
+          <div class="tile-top">
+            <span class="tile-badge">App</span>
+            <span class="tile-status live">Live</span>
+          </div>
+          <h3>Bokklokka</h3>
+          <p>En app for å holde orden på lesetid, barn, bøker og ferdig leste titler.</p>
+          <div class="tile-links">
+            <a class="button small" href="bokklokka.html">Se siden</a>
+            <a class="button small ghost" href="support.html">Support</a>
+          </div>
         </article>
 
-        <article>
-          <h2>Kontakt</h2>
-          <p>
-            E-post: <a href="mailto:jm@skripti.no">jm@skripti.no</a>
-          </p>
-          <p class="muted">
-            Dette er ikke en offisiell app for Sommerles.
-          </p>
+        <article class="tile">
+          <div class="tile-top">
+            <span class="tile-badge">Nettside</span>
+            <span class="tile-status draft">Dashboard</span>
+          </div>
+          <h3>Skripti.no</h3>
+          <p>Et sted for å samle det som er publisert, presentere prosjekter og lenke videre til appene.</p>
+          <div class="tile-links">
+            <a class="button small" href="index.html">Til forsiden</a>
+          </div>
         </article>
+
+        <article class="tile">
+          <div class="tile-top">
+            <span class="tile-badge">Info</span>
+            <span class="tile-status draft">Dokumenter</span>
+          </div>
+          <h3>Support og personvern</h3>
+          <p>Egne sider for kontakt, App Store-krav og en enkel forklaring på hva appen lagrer lokalt.</p>
+          <div class="tile-links">
+            <a class="button small" href="privacy.html">Personvern</a>
+            <a class="button small ghost" href="support.html">Support</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="footer-card card">
+        <div>
+          <p class="eyebrow">Kontakt</p>
+          <h2>jm@skripti.no</h2>
+          <p class="muted">Ta kontakt hvis du finner feil, har forslag, eller trenger hjelp med appen.</p>
+        </div>
+        <div class="footer-links">
+          <a href="bokklokka.html">Bokklokka</a>
+          <a href="support.html">Support</a>
+          <a href="privacy.html">Personvern</a>
+        </div>
       </section>
     </main>
   </body>
