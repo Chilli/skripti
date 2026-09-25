@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Skripti – apper og verktøy jeg har laget: Bokklokka, Monsteroppdrag, Monstergloser og Utlandsveilederen.">
+    <title>Skripti</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar wrap">
+      <a class="brand" href="./">skripti<span>.</span></a>
+      <nav>
+        <a href="#prosjekter">Prosjekter</a>
+        <a id="kontakt-lenke" href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero wrap">
+        <p class="eyebrow">Prosjekter</p>
+        <h1 id="hero-tittel"></h1>
+        <p class="lead" id="hero-ingress"></p>
+        <ul class="chips" id="hero-chips" aria-label="Prosjekter"></ul>
+      </section>
+
+      <section id="prosjekter" class="projects wrap"></section>
+    </main>
+
+    <footer id="kontakt" class="footer wrap">
+      <p>Spørsmål eller tilbakemeldinger? <a id="epost" href="#"></a></p>
+      <p class="muted">© <span id="aar"></span> Skripti</p>
+    </footer>
+
+    <!-- Lysbilde-visning når man klikker på et skjermbilde -->
+    <dialog id="lightbox" aria-label="Skjermbilde">
+      <button class="close" type="button" aria-label="Lukk">×</button>
+      <img alt="">
+    </dialog>
+
+    <script src="prosjekter.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
